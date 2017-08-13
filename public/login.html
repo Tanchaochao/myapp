@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<h1>登录页面</h1>
+	<form action="/users/login" method="get">
+		<div><input name="username" value="zhangsan" type="text" /></div>
+		<div><input name="password" type="text" value="111111" /></div>
+		<div><input type="submit" value="登录" /><input type="button" value="注册" /></div>
+	</form>
+	<script type="text/javascript" src="./javascripts/jquery-1.7.2.min.js"></script>
+	<script type="text/javascript" src="./javascripts/Jquery.Query.js"></script>
+	<script type="text/javascript">
+		if(location.search) {
+			console.log()
+			$("input[name=username]").val($.query.get("username"));
+			$("input[name=password]").val("");
+		}
+		$("input[type=button]").on("click", function() {
+			location.href = "/reg.html";
+		})
+	</script>
+</body>
+</html>

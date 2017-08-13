@@ -1,0 +1,7 @@
+.emp {
+	overflow: hidden;
+}
+
+.emp-left, .emp-right {
+	float: left;
+}

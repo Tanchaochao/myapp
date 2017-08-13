@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<img src="http://localhost:3002/images/1.jpg">
+	<script type="text/javascript" src="javascripts/jquery-1.7.2.min.js"></script>
+	<script type="text/javascript">
+		$.ajax({
+            type: "POST",
+            url: "http://localhost:3002/emp/getAllEmp",
+            dataType: "jsonp",
+            success: function(msg) {
+                console.log(msg)
+            }
+        });
+	</script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<div>
+	<input type="text" />
+	<table border="1">
+		<thead>
+			<tr>
+				<th>员工编号</th>
+				<th>员工姓名</th>
+				<th>员工岗位</th>
+				<th>员工薪水</th>
+				<th>操作</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr ng-repeat="item in page.data">
+				<td>{{ item._id }}</td>
+				<td>{{ item.empName }}</td>
+				<td>{{ item.job }}</td>
+				<td>{{ item.sal }}</td>
+				<td><input ng-click="del(item._id)" type="button" value="删除" /></td>
+			</tr>
+		</tbody>
+	</table>
+	<div>
+		当前页: <select ng-change="setCurPage()" ng-model="page.curPage" ng-options="node.value as node.displayName for node in page.options"></select>
+		每页显示条数: <input ng-blur="setEachPage()" ng-model="page.eachPage" type="text" />
+		最大页数:<span>{{ page.maxPage }}</span>
+		总条数: <span>{{ page.count }}</span>
+	</div>
+	<div>
+		<input ng-click="firstPage()" type="button" value="首页" />
+		<input type="button" value="上一页" />
+		<input type="button" value="下一页" />
+		<input ng-click="lastPage()" type="button" value="尾页" />
+	</div>
+	<div class="{{color}}">123</div>
+</div>

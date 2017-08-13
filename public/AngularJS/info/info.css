@@ -1,0 +1,20 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+.info-nav {
+	overflow: hidden;
+}
+
+.info-nav li {
+	border: 1px solid red;
+	width: 100px;
+	height: 30px;
+	text-align: center;
+	line-height: 30px;
+	float: left;
+}
+
+ul, li {
+	list-style: none;
+}

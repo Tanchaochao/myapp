@@ -1,0 +1,18 @@
+.nav {
+	overflow: hidden;
+}
+
+.nav li {
+	width: 100px;
+	height: 30px;
+	border: 1px solid red;
+	text-align: center;
+	line-height: 30px;
+	float: left;
+}
+
+.nav li:hover {
+	color: white;
+	background: red;
+	cursor: pointer;
+}

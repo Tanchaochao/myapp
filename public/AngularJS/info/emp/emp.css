@@ -1,0 +1,12 @@
+.emp {
+	overflow: hidden;
+	margin-top: 10px;
+}
+
+.emp-left {
+	margin-right: 10px;
+}
+
+.emp-left, .emp-right {
+	float: left;
+}

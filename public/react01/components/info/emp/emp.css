@@ -1,0 +1,11 @@
+.emp {
+	overflow: hidden;
+}
+
+.emp-left, .emp-right {
+	float: left;
+}
+
+tr, td {
+	border: 1px solid red;
+}

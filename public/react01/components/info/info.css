@@ -1,0 +1,29 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-size: 14px;
+	font-family: 微软雅黑;
+}
+
+.info ul, info li {
+	list-style: none;
+}
+
+.info-nav {
+	overflow: hidden;
+}
+
+.info-nav li {
+	float: left;
+	border: 1px solid red;
+}
+
+.info li a {
+	text-decoration: none;
+	display: block;
+	color: black;
+	width: 100px;
+	height: 30px;
+	text-align: center;
+	line-height: 30px;
+}

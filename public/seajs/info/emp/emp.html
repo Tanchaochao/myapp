@@ -1,0 +1,28 @@
+<h1>员工页面</h1>
+    <input type="button" id="checkoutBtn" value="退出" />
+    <input type="button" value="查询" />
+    <table border="1">
+        <thead>
+            <tr>
+                <th>员工编号</th>
+                <th>员工姓名</th>
+                <th>员工薪水</th>
+                <th>员工岗位</th>
+                <th>操作</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+    <div>
+        当前页:
+        <select id="curPage"></select>
+        每页显示条数:
+        <input id="eachPage" value="5" type="text" /> 总条数: <span id="count"></span> 总页数: <span id="maxPage"></span>
+    </div>
+    <div>
+        <input type="button" value="首页" id="firstPage" />
+        <input type="button" value="上一页" id="prePage" />
+        <input type="button" value="下一页" id="nextPage" />
+        <input type="button" value="尾页" id="lastPage" />
+    </div>
+   
